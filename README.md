@@ -13,7 +13,7 @@ It demonstrates API integration, error handling, loading indicators, and structu
 - Handles API errors gracefully and displays an error message if fetching fails.  
 - Uses **MVVM architecture** with `ChangeNotifier`.  
 - Clean and structured code with a **separate API service and ViewModel**.  
-
+- Proper network error handling when offline
 ##  Technologies Used  
 - **Flutter** (Latest version)  
 - **Dart**  
@@ -33,3 +33,10 @@ zylentrix_api_task/
 ├── views/ │ 
 │ ├── post_list_screen.dart # UI to display API data 
 │── pubspec.yaml # Dependencies & configuration
+
+
+## Project Setup
+### Clone the Repository**
+
+git clone https://github.com/AdityaDarji/zylentrix_task.git
+cd zylentrix_task

@@ -8,6 +8,7 @@ class ApiService {
   static const String _url = 'https://jsonplaceholder.typicode.com/posts';
 
   Future<List<Post>> fetchPosts() async {
+    //Error handling for the API response
     try {
       final response = await http
           .get(Uri.parse(_url))

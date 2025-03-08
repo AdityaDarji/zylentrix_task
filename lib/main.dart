@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter API Fetch',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: PostListScreen(),
+      home: PostListScreen(), //Rendring post_list_screen which contains the UI
     );
   }
 }

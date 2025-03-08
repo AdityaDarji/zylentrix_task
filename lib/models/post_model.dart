@@ -1,3 +1,4 @@
+//Model to handle all the posts from user
 class Post {
   final int userId;
   final int id;

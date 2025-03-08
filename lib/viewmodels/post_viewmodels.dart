@@ -15,7 +15,7 @@ class PostViewModel extends ChangeNotifier {
 
       List<Post> posts = await _apiService.fetchPosts();
 
-      // Group posts by userId
+      // Group all posts by userId
       groupedPosts = {};
       for (var post in posts) {
         groupedPosts.putIfAbsent(post.userId, () => []).add(post);

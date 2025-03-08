@@ -55,7 +55,9 @@ class _PostListScreenState extends State<PostListScreen> {
       ),
       body:
           isLoading
-              ? const Center(child: CircularProgressIndicator())
+              ? const Center(
+                child: CircularProgressIndicator(), //Showing progress indicator
+              )
               : errorMessage != null
               ? Center(
                 child: Text(
@@ -82,7 +84,7 @@ class _PostListScreenState extends State<PostListScreen> {
                       ),
                       child: ExpansionTile(
                         title: Text(
-                          'User: $userId',
+                          'User: $userId', // Gets userId from the API and shows data accordingly
                           style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -118,7 +120,7 @@ class _PostListScreenState extends State<PostListScreen> {
                                           ),
                                         ),
                                         Text(
-                                          post.title,
+                                          post.title, // Gets Title from the API
                                           style: const TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
@@ -134,7 +136,7 @@ class _PostListScreenState extends State<PostListScreen> {
                                           ),
                                         ),
                                         Text(
-                                          post.body,
+                                          post.body, // Gets description from the API
                                           style: const TextStyle(fontSize: 14),
                                         ),
                                       ],
