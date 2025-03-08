@@ -8,12 +8,14 @@ It demonstrates API integration, error handling, loading indicators, and structu
 
 ##  Features  
 - Fetches data from `https://jsonplaceholder.typicode.com/posts`.  
-- Displays post titles grouped by `userId`.  
+- Displays post titles grouped by `userId`.  Showing posts by userId rather than just titles and description for better user experience.
 - Shows a **loading indicator** (`CircularProgressIndicator`) while fetching data.  
 - Handles API errors gracefully and displays an error message if fetching fails.  
 - Uses **MVVM architecture** with `ChangeNotifier`.  
 - Clean and structured code with a **separate API service and ViewModel**.  
 - Proper network error handling when offline
+
+
 ##  Technologies Used  
 - **Flutter** (Latest version)  
 - **Dart**  
