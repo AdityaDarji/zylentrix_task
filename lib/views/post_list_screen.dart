@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:zylentrix_api_task/services/api_services.dart';
 import '../models/post_model.dart';
@@ -38,7 +40,7 @@ class _PostListScreenState extends State<PostListScreen> {
       });
     } catch (error) {
       setState(() {
-        errorMessage = 'Error fetching data: $error';
+        errorMessage = error.toString();
         isLoading = false;
       });
     }
