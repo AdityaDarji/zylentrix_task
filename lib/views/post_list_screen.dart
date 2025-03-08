@@ -49,7 +49,7 @@ class _PostListScreenState extends State<PostListScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: const Text('Posts Grouped by User'),
+        title: const Text('Posts Submitted by User'),
         centerTitle: true,
         backgroundColor: Colors.orange[400],
       ),
